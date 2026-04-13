@@ -1,13 +1,20 @@
-import Editor from "./Editor";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Document from "./pages/Document";
 
 function App() {
   return (
-    <div>
-      <h2 style={{ textAlign: "center" }}>
-        Real-Time Collaborative Editor
-      </h2>
-      <Editor />
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          {/* Home Page */}
+          <Route path="/" element={<Home />} />
+
+          {/* Document Editor Page */}
+          <Route path="/doc/:id" element={<Document />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

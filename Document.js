@@ -1,8 +1,17 @@
-const mongoose = require("mongoose");
+import { useParams } from "react-router-dom";
+import Editor from "../components/Editor";
+import Toolbar from "../components/Toolbar";
 
-const DocumentSchema = new mongoose.Schema({
-  _id: String,
-  data: Object,
-});
+function Document() {
+  const { id } = useParams();
 
-module.exports = mongoose.model("Document", DocumentSchema);
+  return (
+    <div>
+      <h2>Document ID: {id}</h2>
+      <Toolbar />
+      <Editor />
+    </div>
+  );
+}
+
+export default Document;
