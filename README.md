@@ -18,3 +18,6 @@ The core feature of this system is real-time synchronization. When a user types 
 
 The application generally consists of a frontend and a backend. The frontend is built using modern JavaScript frameworks such as React.js, which provides a dynamic and responsive user interface. For text editing functionality, libraries like Quill are used, offering features such as text formatting, headings, lists, and alignment. These tools allow users to create well-structured and visually appealing documents.
   
+*OUTPUT*
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/ee51c4d8-a1ff-4ea0-87c8-3164f754221d" />
